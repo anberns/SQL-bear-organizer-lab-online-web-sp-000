@@ -29,8 +29,3 @@ end
 def selects_bear_that_killed_Tim
   "SELECT * FROM bears WHERE name is null"
 end
-
-
-SELECT MAX(y.num)
-  FROM (SELECT COUNT(*) AS num
-          FROM TABLE x) y
