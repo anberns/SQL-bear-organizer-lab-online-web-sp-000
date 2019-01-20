@@ -29,14 +29,3 @@ end
 def selects_bear_that_killed_Tim
   "Write your SQL query here"
 end
-
-
-SELECT customerid,
-       firstname,
-       lastname
-  FROM customers
- WHERE supportrepid IN (
-           SELECT employeeid
-             FROM employees
-            WHERE country = 'Canada'
-       );
